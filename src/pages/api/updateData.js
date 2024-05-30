@@ -18,7 +18,7 @@ async function updateData(req, res) {
             UPDATE registrasi 
             SET nama = ${nama},
                 username = ${username},
-                password = ${password},
+                password = ${hashedPassword},
                 role = ${role},
                 status = ${status}
             WHERE id = ${id}

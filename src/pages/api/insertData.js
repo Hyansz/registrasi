@@ -20,6 +20,7 @@ async function insertData(req, res) {
         res.status(200).json({message: 'Success', data: rows});
     } catch (error) {
         console.log('Terdapat Error: ', error.message);
+        res.status(500).json({message: 'Error'});
     };
 };
 
